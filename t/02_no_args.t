@@ -11,11 +11,11 @@ use Docopt;
 use CLI::Dispatch::Docopt;
 
 {
-    my $opt = docopt(argv => [qw/qux --foo/]);
+    my $opt = docopt(argv => []);
 
     stderr_like {
         run('MyApp::CLI' => $opt);
-    } qr/MyApp::CLI::Qux run!/;
+    } qr/MyApp::CLI run!/;
 }
 
 done_testing;
@@ -24,10 +24,10 @@ __END__
 
 =head1 NAME
 
-01_basic.t
+02_no_args.t
 
 =head1 SYNOPSIS
 
-    01_basic.t <sub_command> [--foo]
+    02_no_args.t [--foo]
 
 =cut
