@@ -99,7 +99,9 @@ CLI::Dispatch::Docopt is the CLI dispatcher with affinity for Docopt.
 
 =head1 METHODS
 
-=head2 run
+=head2 run($base_class, $opt[, $method])
+
+The C<run> function is exported from C<CLI::Dispatch::Docopt>.
 
 
 =head1 REPOSITORY
